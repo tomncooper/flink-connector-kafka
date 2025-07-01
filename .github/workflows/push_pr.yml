@@ -34,6 +34,8 @@ jobs:
     with:
       flink_version: ${{ matrix.flink }}
       jdk_version: ${{ matrix.jdk }}
+      timeout_global: 80
+      timeout_test: 50
   python_test:
     strategy:
       matrix:
@@ -43,3 +45,5 @@ jobs:
     with:
       flink_version: ${{ matrix.flink }}
       jdk_version: ${{ matrix.jdk }}
+      timeout_global: 100
+      timeout_test: 90
