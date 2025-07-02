@@ -38,7 +38,7 @@ jobs:
     strategy:
       matrix:
         flink: [ 2.0.0 ]
-        jdk: [ '17' ]
+        jdk: [ '11, 17, 21' ]
     uses: tomncooper/flink-connector-shared-utils/.github/workflows/python_ci.yml@python_ci_fixes
     with:
       flink_version: ${{ matrix.flink }}
