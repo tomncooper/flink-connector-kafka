@@ -41,7 +41,7 @@ jobs:
       matrix:
         flink: [ 2.0.0 ]
         jdk: [ '17' ]
-    uses: apache/flink-connector-shared-utils/.github/workflows/python_ci.yml@ci_utils
+    uses: tomncooper/flink-connector-shared-utils/.github/workflows/python_ci.yml@python_ci_fixes
     with:
       flink_version: ${{ matrix.flink }}
       jdk_version: ${{ matrix.jdk }}
